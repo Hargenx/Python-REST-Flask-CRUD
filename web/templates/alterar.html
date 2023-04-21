@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Jogador</title>
+</head>
+<body>
+    <h1>Alterar Jogador</h1>
+    <form id="form">
+        <label for="id">ID: {{ jogador.id }}</label>
+        <div class="form-group">
+            <label for="nome">Nome: {{ jogador.Nome }}</label>
+            <input type="text" class="form-control" id="nome" name="nome" value="{{ jogador['Nome'] }}" required>
+        </div>
+        <div class="form-group">
+            <label for="idade">Idade: {{ jogador.Idade }}</label>
+            <input type="number" class="form-control" id="idade" name="idade" value="{{ jogador['Idade'] }}" required >
+        </div>
+        <div class="form-group">
+            <label for="numero">Número: {{ jogador.Numero }}</label>
+            <input type="number" class="form-control" id="numero" name="numero" value="{{ jogador['Numero'] }}" required >
+        </div>
+        <div class="form-group">
+            <label for="clube">Clube: {{ jogador.Clube }}</label>
+            <input type="text" class="form-control" id="clube" name="clube" value="{{ jogador['Clube'] }}" required >
+        </div>
+        <div class="form-group">
+            <label for="posicao">Posição: {{ jogador.Posição }}</label>
+            <input type="text" class="form-control" id="posicao" name="posicao" value="{{ jogador['Posição'] }}" required >
+        </div>
+<div id="notification"></div>
+        <button type="submit" id="btn-atualizar" class="btn btn-primary">Atualizar</button>
+    </form>
+    
+    <a href="/" class="btn btn-secondary">Voltar</a>
+    
+    <script src="{{ url_for('static', filename='script_alterar.js') }}"></script>
+
+    <!-- CSS do Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<!-- JavaScript do Bootstrap (depende do jQuery e do Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

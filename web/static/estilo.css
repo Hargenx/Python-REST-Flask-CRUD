@@ -1,0 +1,23 @@
+.notificacao {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .notificacao.sucesso {
+    background-color: #00cc00;
+    color: #fff;
+  }
+  
+  .notificacao.erro {
+    background-color: #ff3333;
+    color: #fff;
+  }
+  input.required:invalid {
+    border: 1px solid red;
+  }
