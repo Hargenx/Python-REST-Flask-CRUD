@@ -1,6 +1,8 @@
 # Python-REST-Flask-CRUD
 A fun test making a CRUD in REST for a lecture.
 
+#
+ ``` bash
 ├── web
 │   ├── static
 │   │   └── estilo.css
@@ -12,3 +14,4 @@ A fun test making a CRUD in REST for a lecture.
 |   |   └── incluir.html
 |   |   └── index.html
 |   └── flask_test.py
+```
